@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #f6f7fb;
+    color: #111827;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+}
+
+.header h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Layout */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 12px;
+    padding: 10px;
+    min-height: calc(100vh - 65px);
+}
+
+/* Cartes */
+
+.recipe-card,
+.sidebar {
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.recipe-card {
+    padding: 18px;
+}
+
+.recipe-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.content-box {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content-box h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.content-box ul,
+.content-box ol {
+    margin-left: 22px;
+    margin-bottom: 24px;
+}
+
+.content-box li {
+    margin-bottom: 5px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.form-card h2,
+.comments-section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.form-card label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+small {
+    font-size: small;
+    display: block;
+    margin-top: 6px;
+    color: #111827;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    margin-top: 14px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-card button {
+    background: #2563eb;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+.form-card button:hover {
+    background: #1d4ed8;
+}
+
+.error {
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: #fee2e2;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+/* Commentaires */
+
+.comments-section {
+    margin-top: 18px;
+}
+
+.comment {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+    margin-top: 12px;
+}
+
+.comment h4 {
+    margin-bottom: 8px;
+}
+
+.comment p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.delete-btn {
+    background: transparent;
+    color: #dc2626;
+    text-align: left;
+    width: auto;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

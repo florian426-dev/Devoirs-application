@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Carnet Gourmand</title>
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🍽️</div>
+        <div>
+            <h1>Le Carnet Gourmand</h1>
+            <p>Avis des lecteurs</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Partie recette -->
+        <section class="recipe-card">
+            <h2>Pâtes crémeuses au citron</h2>
+            <p class="subtitle">
+                Laissez votre avis sur cette recette grâce au formulaire ci-contre.
+            </p>
+
+            <div class="content-box">
+                <h3>Ingrédients</h3>
+
+                <ul>
+                    <li>Pâtes</li>
+                    <li>Crème</li>
+                    <li>Citron</li>
+                    <li>Parmesan</li>
+                </ul>
+
+                <h3>Préparation</h3>
+
+                <ol>
+                    <li>Cuire les pâtes.</li>
+                    <li>Mélanger la crème et le citron.</li>
+                    <li>Ajouter le parmesan.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Sidebar -->
+         <aside class="sidebar">
+
+            <form id="commentForm" class="form-card">
+            <h2>Laisser un commentaire</h2>
+
+            <label for="name">Votre nom</label>
+            <input type="text" id="name" placeholder="Ex : Léa">
+
+            <label for="comment">Votre commentaire</label>
+            <textarea id="comment" placeholder="Votre avis sur la recette..."></textarea>
+
+            <button type="submit">Publier</button>
+
+            <div id="error" class="error"></div>
+            </form>
+
+            <div class="comments-section">
+                <h2>Commentaires</h2>
+
+            <div id="comments"></div>
+            </div>
+
+        </aside>
+
+    </main>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
